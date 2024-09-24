@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">EvalucionMoviles</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_carry">Cargar</string>
+    <string name="menu_list">Listar</string>
+    <string name="menu_leave">Salir</string>
+
+
+    <string name="title">Evaluacion de <font color='#FF000000'>Moviles</font></string>
+    <string name="teacher">Profesor: Luis Javier Mercado</string>
+    <string name="student">Alumno: Fermin Orlando Fernandez</string>
+
+    <string-array name="product_categories">
+        <item>Limpieza</item>
+        <item>Almacen</item>
+        <item>Perfumeria</item>
+        <item>Bazar</item>
+    </string-array>
+</resources>

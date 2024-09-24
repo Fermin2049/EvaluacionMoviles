@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_carry">
+
+    <fragment
+        android:id="@+id/nav_carry"
+        android:name="com.fermin2049.evalucionmoviles.ui.carry.CarryFragment"
+        android:label="@string/menu_carry"
+        tools:layout="@layout/fragment_carry" />
+
+    <fragment
+        android:id="@+id/nav_list"
+        android:name="com.fermin2049.evalucionmoviles.ui.list.ListFragment"
+        android:label="@string/menu_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_nav_list_to_detailProductFragment"
+            app:destination="@id/detailProductFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_leave"
+        android:name="com.fermin2049.evalucionmoviles.ui.leave.LeaveFragment"
+        android:label="@string/menu_leave"
+        tools:layout="@layout/fragment_leave" />
+    <fragment
+        android:id="@+id/detailProductFragment"
+        android:name="com.fermin2049.evalucionmoviles.ui.list.DetailProductFragment"
+        android:label="DetailProductFragment" >
+        <action
+            android:id="@+id/action_detailProductFragment_to_nav_list"
+            app:destination="@id/nav_list" />
+    </fragment>
+
+</navigation>
